@@ -26,7 +26,7 @@ function main(file)
         elf1 = range(s1, e1)
         elf2 = range(s2, e2)
 
-        if length(intersect(elf1, elf2)) != 0
+        if length(elf1 ∩ elf2) != 0
             int += 1
         end
     end
@@ -34,4 +34,4 @@ function main(file)
     print("$int pairs that intersect.\n")
 end
 
-main("input.txt")
+main("ex.txt")

@@ -21,8 +21,6 @@ Following the Elf's instructions for the second column, what would your total sc
 everything goes exactly according to your strategy guide?
 =#
 
-using Printf
-
 function main(file)
     f = open(file)
     score = 0
@@ -36,7 +34,7 @@ function main(file)
         score += def + (res + 1) * 3    # add score for result and our play
     end
 
-    @printf("Score: %d\n", score)
+    println("Score: $score")
 end
 
 main("input.txt")

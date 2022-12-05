@@ -65,7 +65,7 @@ function main(file)
         elf1 = range(s1, e1)
         elf2 = range(s2, e2)
 
-        if issubset(elf1, elf2) || issubset(elf2, elf1)
+        if elf1 ⊆ elf2 || elf1 ⊇ elf2
             contained += 1
         end
     end
@@ -73,4 +73,4 @@ function main(file)
     print("$contained pairs in which one fully contains the other.\n")
 end
 
-main("input.txt")
+main("ex.txt")

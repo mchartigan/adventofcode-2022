@@ -50,8 +50,6 @@ Find the item type that appears in both compartments of each rucksack. What is t
 priorities of those item types?
 =#
 
-using Printf
-
 function main(file)
     f = open(file)
     sum = 0
@@ -60,7 +58,7 @@ function main(file)
         n = length(line)
 
         # iterate over characters in first and second compartment
-        for i in range(1, Int(n / 2)), j in range(Int(n / 2) + 1, n)
+        for i in range(1, n ÷ 2), j in range(n ÷ 2 + 1, n)
             if line[i] == line[j]   # chars are equal
                 pri = Int(line[i])
                 # add priority to summ
@@ -70,7 +68,7 @@ function main(file)
         end
     end
 
-    @printf("sum = %d\n", sum)
+    println("sum = $sum")
 end
 
-main("input.txt")
+main("ex.txt")

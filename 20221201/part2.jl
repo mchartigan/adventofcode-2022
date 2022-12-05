@@ -22,6 +22,7 @@ function main(file)
     f = open(file)
     localsum = 0
     elves = []
+    
 
     for line in eachline(f)
         if line == ""
