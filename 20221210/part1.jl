@@ -90,7 +90,6 @@ function main(file)
             (diff = (cycle - 20) % 40) ∈ (0,1) && (sum += (cycle - diff) * x)
 
             x += num
-
         end
     end
 
